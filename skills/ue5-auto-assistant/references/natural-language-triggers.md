@@ -5,6 +5,7 @@
 - Why is my inventory data empty after loading save data?
 - How do I write a reusable UE5 C++ component?
 - Tooltip goes off-screen in UMG. How should I fix it?
+- How do I generate deterministic modular buildings with PCG and Shape Grammar?
 - What should I check before packaging?
 
 ## Expected Routing
@@ -13,6 +14,7 @@
 - UI / UMG / Slate -> `ue5-ui-umg-slate`
 - save/load / replication -> `ue5-save-load-replication`
 - world interaction / pickup -> `ue5-world-interaction`
+- PCG / procedural building / Shape Grammar -> `ue5-pcg-building`
 - performance / packaging -> `ue5-performance-packaging`
 - debugging / validation -> `ue5-debug-validation`
 - module boundary / architecture -> `ue5-architecture`

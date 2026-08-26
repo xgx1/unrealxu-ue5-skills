@@ -4,7 +4,7 @@
 
 ## English
 
-A practical Codex skill pack for Unreal Engine **5.6/5.7** projects.
+A practical Codex skill pack for Unreal Engine **5.6-5.8** projects.
 
 This repository provides reusable skill workflows to help with:
 
@@ -27,12 +27,15 @@ This repository provides reusable skill workflows to help with:
 
 > Screenshot of the UE5 skills list for AI Q&A (English version, captured on March 3, 2026).
 
-### Latest Update (March 2026)
+### Latest Update (August 2026)
 
-The skill pack has started a UE5.7 actionable upgrade pass.
+The skill pack now supports UE5.6 through UE5.8. The UE5.8 pass was validated against an installed UE5.8.2 engine source tree while preserving the existing UE5.6/UE5.7 workflows.
 
-Upgraded skills:
+Compatibility-covered skills:
 
+- `ue5-auto-assistant`
+- `ue5-module-router`
+- `ue5-architecture`
 - `ue5-pcg-building`
 - `ue5-blueprint-workflow`
 - `ue5-cpp-gameplay`
@@ -42,12 +45,16 @@ Upgraded skills:
 - `ue5-performance-packaging`
 - `ue5-debug-validation`
 
-What changed in upgraded skills:
+What changed in this pass:
 
-- Added `UE5.7 API Anchors` sections with concrete engine class/function/node references
+- Expanded API anchors and compatibility notes to UE5.6-UE5.8
+- Updated UE5.8 PCG scheduler guidance to use execution-source APIs instead of deprecated component refresh calls
+- Added UE5.8-specific packaging, Incremental Cooking, Enhanced Input debugging, Iris, and PCG capability notes
+- Rebuilt the module index and routing table from UE5.8.2 engine source
+- Passed source-anchor validation on UE5.7.4 and UE5.8.2 while preserving the established UE5.6 compatibility path
+- Fixed skill validation on Windows CRLF checkouts
 - Added stage-contract sections to make workflows decision-complete
 - Converted failure handling into executable `symptom -> locate -> fix` checklists
-- Added explicit UE5.6/UE5.7 compatibility notes
 
 ### Skill List
 
@@ -55,7 +62,7 @@ What changed in upgraded skills:
 - `ue5-module-router`: module name/alias based routing
 - `ue5-architecture`: module layout, Build.cs, ownership boundaries
 - `ue5-blueprint-workflow`: Blueprint graph edits and input-event workflows
-- `ue5-cpp-gameplay`: gameplay C++ patterns for UE5.6/5.7
+- `ue5-cpp-gameplay`: gameplay C++ patterns for UE5.6-5.8
 - `ue5-debug-validation`: issue triage and validation workflow
 - `ue5-performance-packaging`: runtime perf and pre-package checks
 - `ue5-save-load-replication`: SaveGame and multiplayer sync workflow
@@ -77,9 +84,10 @@ Run:
 
 ```powershell
 python .\skills\scripts\validate_skills.py
+python .\skills\scripts\validate_engine_anchors.py --engine-root "E:\UEVersion\UE_5.8"
 ```
 
-Expected output: `Validation OK`
+Expected output: `Validation OK` and `Engine anchor validation OK`
 
 ### Risk Notice (Testing Stage)
 
@@ -97,7 +105,7 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE).
 
 ## 中文
 
-这是一个面向 Unreal Engine **5.6/5.7** 的 Codex 技能包。
+这是一个面向 Unreal Engine **5.6-5.8** 的 Codex 技能包。
 
 仓库提供可复用的技能工作流，覆盖：
 
@@ -120,10 +128,15 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE).
 
 > 该图为 UE5 技能列表（AI问答）中文截图（截图时间：2026年3月3日）。
 
-### 最新更新（2026年3月）
+### 最新更新（2026年8月）
 
-技能包已开始进行 UE5.7 可落地化升级，当前已完成：
+技能包现已支持 UE5.6 到 UE5.8。本轮使用已安装的 UE5.8.2 引擎源码完成验证，同时保留原有 UE5.6/UE5.7 工作流。
 
+已覆盖兼容性的技能：
+
+- `ue5-auto-assistant`
+- `ue5-module-router`
+- `ue5-architecture`
 - `ue5-pcg-building`
 - `ue5-blueprint-workflow`
 - `ue5-cpp-gameplay`
@@ -133,12 +146,16 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE).
 - `ue5-performance-packaging`
 - `ue5-debug-validation`
 
-已升级技能统一补齐：
+本轮更新包括：
 
-- `UE5.7 API Anchors`（具体类/函数/节点锚点）
+- API 锚点和兼容说明扩展至 UE5.6-UE5.8
+- UE5.8 PCG 调度改用 Execution Source API，避免继续推荐已弃用的 Component Refresh API
+- 增加 UE5.8 打包、Incremental Cooking、Enhanced Input 调试、Iris 和 PCG 新能力说明
+- 使用 UE5.8.2 引擎源码重建模块索引和路由表
+- UE5.7.4 与 UE5.8.2 源码锚点校验通过，并保留既有 UE5.6 兼容路径
+- 修复 Windows CRLF 检出环境中的 Skill 校验问题
 - 阶段契约（保证流程可执行、可交付）
 - 可执行故障处理（症状 -> 定位 -> 修复）
-- UE5.6/UE5.7 兼容说明
 
 ### 技能列表
 
@@ -146,7 +163,7 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE).
 - `ue5-module-router`：按模块名/别名进行路由
 - `ue5-architecture`：模块划分、Build.cs 依赖、职责边界设计
 - `ue5-blueprint-workflow`：Blueprint 图表编辑与输入事件工作流
-- `ue5-cpp-gameplay`：UE5.6/5.7 Gameplay C++ 实现模式
+- `ue5-cpp-gameplay`：UE5.6-5.8 Gameplay C++ 实现模式
 - `ue5-debug-validation`：问题排查与验证工作流
 - `ue5-performance-packaging`：运行时性能与打包前检查
 - `ue5-save-load-replication`：SaveGame 与多人同步工作流
@@ -168,9 +185,10 @@ This project is licensed under the MIT License. See [LICENSE](./LICENSE).
 
 ```powershell
 python .\skills\scripts\validate_skills.py
+python .\skills\scripts\validate_engine_anchors.py --engine-root "E:\UEVersion\UE_5.8"
 ```
 
-期望输出：`Validation OK`
+期望输出：`Validation OK` 和 `Engine anchor validation OK`
 
 ### 风险提示（测试阶段）
 

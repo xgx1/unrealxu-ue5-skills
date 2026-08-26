@@ -1,45 +1,45 @@
-# UE5.6/UE5.7 Engine Module Index V2.3 (Draft)
+# UE5.6-UE5.8 Engine Module Index V2.4
 
-- Engine Source: `E:\UEVersion\UE_5.7\Engine\Source`
-- Detected Engine Version: `5.7`
-- Generated At: 2026-03-02 14:36:58
-- Total Modules (.Build.cs): **713**
+- Engine Source: `E:\UEVersion\UE_5.8\Engine\Source`
+- Detected Engine Version: `5.8.2`
+- Generated At: 2026-08-26 16:33:27
+- Total Modules (.Build.cs): **755**
 - Full CSV: `skills/ue5-architecture/references/ue5-engine-module-index-v2.csv`
 - Final Routing CSV: `skills/ue5-architecture/references/ue5-module-routing-table-final.csv`
 
 ## Layer Distribution
-- Runtime: 266
-- Developer: 157
-- ThirdParty: 145
-- Editor: 143
+- Runtime: 291
+- Developer: 164
+- ThirdParty: 153
+- Editor: 145
 - Programs: 2
 
 ## Domain V2 Distribution
-- General: 467
-- CoreEngine: 39
-- Rendering: 39
+- General: 490
+- CoreEngine: 43
+- NetworkingOnline: 41
+- Rendering: 41
 - Audio: 37
-- NetworkingOnline: 34
-- AssetsBuildPipeline: 26
+- AssetsBuildPipeline: 27
 - Animation: 16
 - UI: 15
 - Media: 13
-- GameplayFramework: 9
-- Physics: 8
-- AI_Mass: 7
-- XR: 3
+- Physics: 11
+- GameplayFramework: 10
+- AI_Mass: 9
+- XR: 2
 
 ## Target Skill Distribution
-- ue5-architecture: 505
-- ue5-cpp-gameplay: 85
-- ue5-performance-packaging: 67
-- ue5-save-load-replication: 33
+- ue5-architecture: 532
+- ue5-cpp-gameplay: 87
+- ue5-performance-packaging: 70
+- ue5-save-load-replication: 40
 - ue5-ui-umg-slate: 15
-- ue5-world-interaction: 8
+- ue5-world-interaction: 11
 
 ## Routing Confidence Distribution
-- medium: 591
-- low: 95
+- medium: 625
+- low: 103
 - high: 27
 
 ## Sample (First 100)
@@ -65,6 +65,7 @@
 | AutomationWindow | Developer | General | ue5-architecture | medium | `Developer\AutomationWindow\AutomationWindow.Build.cs` |
 | BlankModule | Developer | General | ue5-architecture | medium | `Developer\BlankModule\BlankModule.Build.cs` |
 | BSPUtils | Developer | General | ue5-architecture | medium | `Developer\BSPUtils\BSPUtils.Build.cs` |
+| ChaosTestHarness | Developer | Physics | ue5-world-interaction | medium | `Developer\ChaosTestHarness\ChaosTestHarness.Build.cs` |
 | CollectionManager | Developer | General | ue5-architecture | medium | `Developer\CollectionManager\CollectionManager.Build.cs` |
 | CollisionAnalyzer | Developer | Physics | ue5-world-interaction | medium | `Developer\CollisionAnalyzer\CollisionAnalyzer.Build.cs` |
 | CookedEditor | Developer | General | ue5-architecture | medium | `Developer\CookedEditor\CookedEditor.Build.cs` |
@@ -89,6 +90,7 @@
 | ExternalImagePicker | Developer | General | ue5-architecture | medium | `Developer\ExternalImagePicker\ExternalImagePicker.Build.cs` |
 | FileUtilities | Developer | General | ue5-architecture | medium | `Developer\FileUtilities\FileUtilities.Build.cs` |
 | FunctionalTesting | Developer | General | ue5-architecture | medium | `Developer\FunctionalTesting\FunctionalTesting.Build.cs` |
+| GDKPlatformEditor | Developer | General | ue5-architecture | medium | `Developer\Microsoft\GDKPlatformEditor\GDKPlatformEditor.Build.cs` |
 | GeometryProcessingInterfaces | Developer | General | ue5-architecture | medium | `Developer\GeometryProcessingInterfaces\GeometryProcessingInterfaces.Build.cs` |
 | GraphColor | Developer | General | ue5-architecture | medium | `Developer\GraphColor\GraphColor.Build.cs` |
 | HierarchicalLODUtilities | Developer | General | ue5-architecture | medium | `Developer\HierarchicalLODUtilities\HierarchicalLODUtilities.Build.cs` |
@@ -99,6 +101,7 @@
 | IOSTargetPlatform | Developer | General | ue5-architecture | medium | `Developer\IOS\IOSTargetPlatform\IOSTargetPlatform.Build.cs` |
 | IOSTargetPlatformControls | Developer | General | ue5-architecture | medium | `Developer\IOS\IOSTargetPlatformControls\IOSTargetPlatformControls.Build.cs` |
 | IOSTargetPlatformSettings | Developer | General | ue5-architecture | medium | `Developer\IOS\IOSTargetPlatformSettings\IOSTargetPlatformSettings.Build.cs` |
+| IoStoreOnDemandUtilities | Developer | General | ue5-architecture | medium | `Developer\IoStore\OnDemandUtilities\IoStoreOnDemandUtilities.Build.cs` |
 | IoStoreUtilities | Developer | General | ue5-architecture | medium | `Developer\IoStoreUtilities\IoStoreUtilities.Build.cs` |
 | LauncherServices | Developer | General | ue5-architecture | medium | `Developer\LauncherServices\LauncherServices.Build.cs` |
 | LegacyProjectLauncher | Developer | General | ue5-architecture | medium | `Developer\LegacyProjectLauncher\LegacyProjectLauncher.Build.cs` |
@@ -142,6 +145,3 @@
 | QuadricMeshReduction | Developer | General | ue5-architecture | medium | `Developer\MeshSimplifier\QuadricMeshReduction.Build.cs` |
 | S3Client | Developer | General | ue5-architecture | medium | `Developer\S3Client\S3Client.Build.cs` |
 | ScreenShotComparison | Developer | General | ue5-architecture | medium | `Developer\ScreenShotComparison\ScreenShotComparison.Build.cs` |
-| ScreenShotComparisonTools | Developer | General | ue5-architecture | medium | `Developer\ScreenShotComparisonTools\ScreenShotComparisonTools.Build.cs` |
-| ScriptDisassembler | Developer | General | ue5-architecture | medium | `Developer\ScriptDisassembler\ScriptDisassembler.Build.cs` |
-| SessionFrontend | Developer | General | ue5-architecture | medium | `Developer\SessionFrontend\SessionFrontend.Build.cs` |

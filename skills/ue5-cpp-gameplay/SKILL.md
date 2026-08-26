@@ -1,6 +1,6 @@
 ---
 name: ue5-cpp-gameplay
-description: UE5.6/UE5.7 gameplay C++ implementation for Actors, Components, DataAssets, and gameplay logic. Use when requests ask to write .h/.cpp pairs, expose UPROPERTY/UFUNCTION to Blueprint, use GameplayTags, or build reusable component-based systems.
+description: UE5.6-UE5.8 gameplay C++ implementation for Actors, Components, DataAssets, and gameplay logic. Use when requests ask to write .h/.cpp pairs, expose UPROPERTY/UFUNCTION to Blueprint, use GameplayTags, or build reusable component-based systems.
 ---
 
 # Quick Start
@@ -8,7 +8,7 @@ description: UE5.6/UE5.7 gameplay C++ implementation for Actors, Components, Dat
 - Define required Blueprint-facing API before implementation.
 - Output both header and source files together.
 
-# UE5.7 API Anchors
+# API Anchors (UE5.6-UE5.8)
 - Reflection and UObject anchors:
   - `UCLASS`, `USTRUCT`, `UENUM`, `UINTERFACE`, `GENERATED_BODY()`
   - `UPROPERTY(...)`, `UFUNCTION(...)`
@@ -65,7 +65,7 @@ description: UE5.6/UE5.7 gameplay C++ implementation for Actors, Components, Dat
 
 # Constraints
 - Always provide matching `.h` and `.cpp` when creating a class.
-- Use non-deprecated APIs compatible with UE5.6/UE5.7.
+- Use non-deprecated APIs compatible with UE5.6-UE5.8.
 - Keep includes minimal; use forward declarations in headers.
 - Avoid hardcoded asset paths unless explicitly requested.
 - Prefer `TObjectPtr<>` in UPROPERTY object references in headers.
@@ -91,8 +91,8 @@ description: UE5.6/UE5.7 gameplay C++ implementation for Actors, Components, Dat
   - Locate: invalid tag names or missing tag config.
   - Fix: validate tags on startup and guard with explicit fallback behavior.
 
-# UE5.6 / UE5.7 Compatibility Notes
-- Reflection, replication, and GameplayTag APIs above are stable across UE5.6 and UE5.7.
+# UE5.6-UE5.8 Compatibility Notes
+- Reflection, replication, and GameplayTag APIs above are stable across UE5.6-UE5.8.
 - Favor stable core APIs over editor-only helpers when runtime behavior is required.
 
 # Escalation

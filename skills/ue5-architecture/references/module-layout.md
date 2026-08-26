@@ -1,4 +1,4 @@
-# Module Layout (UE5.6/UE5.7)
+# Module Layout (UE5.6-UE5.8)
 
 ## Baseline
 - `Source/ProjectName/` for runtime gameplay and shared systems.

@@ -1,4 +1,4 @@
-# Beginner Smoke Prompts (UE5.6/UE5.7 MCP + Skill)
+# Beginner Smoke Prompts (UE5.6-UE5.8 MCP + Skill)
 
 Use these prompts to validate natural-language routing and MCP tool priority.
 
@@ -43,6 +43,12 @@ Prompt: `Give me a pre-package checklist and profiling order.`
 Expected:
 - primary skill: `ue5-performance-packaging`
 - tools include `run_console_command`, `get_output_log`
+
+## Case 7: PCG Building
+Prompt: `Generate deterministic modular buildings from lot splines with Shape Grammar.`
+Expected:
+- primary skill: `ue5-pcg-building`
+- tools include `asset_search`, `blueprint_query`, `get_output_log`
 
 ## Pass Criteria
 - correct routing for each prompt

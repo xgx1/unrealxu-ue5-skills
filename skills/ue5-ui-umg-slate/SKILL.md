@@ -1,6 +1,6 @@
 ---
 name: ue5-ui-umg-slate
-description: UE5.6/UE5.7 UI development workflow using UMG and Slate integration. Use when requests involve Widget Blueprint setup, Slate host widgets, lifecycle binding, input and focus handling, tooltip behavior, or viewport clamping logic.
+description: UE5.6-UE5.8 UI development workflow using UMG and Slate integration. Use when requests involve Widget Blueprint setup, Slate host widgets, lifecycle binding, input and focus handling, tooltip behavior, or viewport clamping logic.
 ---
 
 # Quick Start
@@ -8,7 +8,7 @@ description: UE5.6/UE5.7 UI development workflow using UMG and Slate integration
 - Define data source component/subsystem and UI binding point.
 - Output widget tree intent and runtime binding sequence.
 
-# UE5.7 API Anchors
+# API Anchors (UE5.6-UE5.8)
 - UMG lifecycle and viewport anchors:
   - `UUserWidget::NativeConstruct()`, `UUserWidget::NativeDestruct()`
   - `UUserWidget::AddToViewport(...)`
@@ -94,9 +94,9 @@ description: UE5.6/UE5.7 UI development workflow using UMG and Slate integration
   - Locate: stale delegate/timer/reference retention.
   - Fix: clear bindings and transient refs in teardown.
 
-# UE5.6 / UE5.7 Compatibility Notes
-- UMG lifecycle, input mode, and Slate focus APIs listed above are stable in UE5.6/UE5.7.
-- Prefer Enhanced Input + explicit UI input mode ownership in both versions.
+# UE5.6-UE5.8 Compatibility Notes
+- UMG lifecycle, input mode, and Slate focus APIs listed above are stable in UE5.6-UE5.8.
+- Prefer Enhanced Input + explicit UI input mode ownership across all supported versions.
 
 # Escalation
 - Escalate when behavior requires engine-level Slate customization beyond project scope.

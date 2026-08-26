@@ -25,7 +25,7 @@
 - Use Spawn Actor only for interactive or stateful building parts.
 - Keep output split by layer for easier debug and culling.
 
-## Minimal Runnable Template Graph (UE5.7)
+## Minimal Runnable Template Graph (UE5.6-UE5.8)
 - Goal: build a deterministic lot-to-building graph that runs in editor and runtime.
 - Stage chain:
   - Input: `UPCGDataFromActorSettings` -> `UPCGGetActorPropertySettings`
@@ -58,6 +58,7 @@
   - move non-interactive outputs from actor spawn to static mesh instancing;
   - split heavy grammar branches into lower-frequency passes.
 
-## UE5.6 / UE5.7 Note
-- Patterns above are valid in both versions.
-- Runtime scheduler include paths differ between versions; keep include usage version-aware in C++ helpers.
+## UE5.6-UE5.8 Note
+- Patterns above are valid across UE5.6-UE5.8.
+- Runtime scheduler include paths differ between 5.6 and later versions; keep include usage version-aware in C++ helpers.
+- In UE5.8, prefer the execution-source scheduler refresh APIs; the component-named refresh APIs are deprecated.

@@ -1,15 +1,15 @@
 ---
 name: ue5-auto-assistant
-description: UE5.6/UE5.7 automatic assistant entry for beginners. Use when users ask Unreal questions without naming a specific skill. Auto-route to the most precise UE5 skill and recommend dedicated MCP tools.
+description: UE5.6-UE5.8 automatic assistant entry for beginners. Use when users ask Unreal questions without naming a specific skill. Auto-route to the most precise UE5 skill and recommend dedicated MCP tools.
 ---
 
 # Quick Start
-- Treat this as the default entry for UE5.6/UE5.7 requests.
+- Treat this as the default entry for UE5.6-UE5.8 requests.
 - Parse user intent first without requiring module names.
 - Route to `ue5-module-router` when module-level precision is needed.
 
 # Workflow
-- Detect request type: Blueprint, C++, UI, save/load, networking, world interaction, debugging, performance, packaging.
+- Detect request type: Blueprint, C++, UI, save/load, networking, world interaction, PCG/procedural generation, debugging, performance, packaging.
 - If module names appear, delegate routing to `ue5-module-router`.
 - If module names do not appear, route by intent:
   - Blueprint -> `ue5-blueprint-workflow`
@@ -17,6 +17,7 @@ description: UE5.6/UE5.7 automatic assistant entry for beginners. Use when users
   - UI/UMG/Slate -> `ue5-ui-umg-slate`
   - save/load/replication -> `ue5-save-load-replication`
   - pickup/spawner/world interaction -> `ue5-world-interaction`
+  - PCG/procedural building/shape grammar -> `ue5-pcg-building`
   - perf/packaging -> `ue5-performance-packaging`
   - debugging/validation -> `ue5-debug-validation`
   - architecture/refactor -> `ue5-architecture`
@@ -44,6 +45,9 @@ description: UE5.6/UE5.7 automatic assistant entry for beginners. Use when users
 - World interaction/pickup/spawner requests:
   - target skill: `ue5-world-interaction`
   - recommended tools: `spawn_actor`, `get_level_actors`, `set_property`, `move_actor`
+- PCG/procedural building requests:
+  - target skill: `ue5-pcg-building`
+  - recommended tools: `asset_search`, `blueprint_query`, `get_output_log`, `capture_viewport`
 - Performance/packaging requests:
   - target skill: `ue5-performance-packaging`
   - recommended tools: `run_console_command`, `get_output_log`, `capture_viewport`, `open_level`

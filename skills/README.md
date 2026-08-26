@@ -4,7 +4,7 @@
 
 ## English
 
-This folder contains Codex skills for Unreal Engine 5.6/5.7 projects.
+This folder contains Codex skills for Unreal Engine 5.6-5.8 projects.
 
 ### Skills Overview Screenshot
 
@@ -32,9 +32,9 @@ This folder contains Codex skills for Unreal Engine 5.6/5.7 projects.
   - `ue5-world-interaction`
   - `ue5-pcg-building`
 
-### UE5.7 Actionable Upgrade Status
+### UE5.8 Compatibility Status
 
-Skills already upgraded to the UE5.7 actionable format:
+All included skills now advertise UE5.6-UE5.8 compatibility. The domain workflows below have version-aware API anchors and actionable stage contracts:
 
 - `ue5-pcg-building`
 - `ue5-blueprint-workflow`
@@ -45,12 +45,15 @@ Skills already upgraded to the UE5.7 actionable format:
 - `ue5-performance-packaging`
 - `ue5-debug-validation`
 
-Each upgraded skill now contains:
+The compatibility pass includes:
 
-- `UE5.7 API Anchors` (engine class/function/node anchors)
+- UE5.6-UE5.8 API anchors and version-specific exceptions
+- UE5.8.2 source-derived module and routing indexes
+- source-anchor validation passed on UE5.7.4 and UE5.8.2, with the existing UE5.6 path preserved
+- UE5.8 PCG execution-source scheduler APIs
 - stage contract section (decision-complete workflow contract)
 - executable failure handling (`symptom -> locate -> fix`)
-- explicit UE5.6/UE5.7 compatibility notes
+- CRLF-safe validation on Windows
 
 ### Key Routing Data
 
@@ -75,9 +78,10 @@ Examples:
 
 ```powershell
 python .\skills\scripts\validate_skills.py
+python .\skills\scripts\validate_engine_anchors.py --engine-root "E:\UEVersion\UE_5.8"
 ```
 
-Expected output: `Validation OK`
+Expected output: `Validation OK` and `Engine anchor validation OK`
 
 ### Rebuild Routing Index (Architecture Skill)
 
@@ -90,7 +94,7 @@ python .\skills\ue5-architecture\scripts\generate_module_index_v2.py
 Explicit engine source:
 
 ```powershell
-python .\skills\ue5-architecture\scripts\generate_module_index_v2.py --engine-source "E:\UEVersion\UE_5.7\Engine\Source"
+python .\skills\ue5-architecture\scripts\generate_module_index_v2.py --engine-source "E:\UEVersion\UE_5.8\Engine\Source"
 ```
 
 ### Sync To Global Codex Skills
@@ -117,7 +121,7 @@ This skill pack is still in active iteration.
 
 ## 中文
 
-本目录提供面向 Unreal Engine 5.6/5.7 的 Codex 技能包。
+本目录提供面向 Unreal Engine 5.6-5.8 的 Codex 技能包。
 
 ### Skills 总览截图
 
@@ -145,9 +149,9 @@ This skill pack is still in active iteration.
   - `ue5-world-interaction`
   - `ue5-pcg-building`
 
-### UE5.7 可落地化升级状态
+### UE5.8 兼容状态
 
-已完成升级的技能：
+所有技能现已声明支持 UE5.6-UE5.8。以下领域工作流包含按版本区分的 API 锚点与可执行阶段契约：
 
 - `ue5-pcg-building`
 - `ue5-blueprint-workflow`
@@ -158,12 +162,15 @@ This skill pack is still in active iteration.
 - `ue5-performance-packaging`
 - `ue5-debug-validation`
 
-以上技能统一补齐了：
+本轮兼容升级包括：
 
-- `UE5.7 API Anchors`（具体引擎类/函数/节点锚点）
+- UE5.6-UE5.8 API 锚点与版本差异说明
+- 基于 UE5.8.2 源码生成的模块索引和路由表
+- UE5.7.4 与 UE5.8.2 源码锚点校验通过，并保留既有 UE5.6 路径
+- UE5.8 PCG Execution Source 调度 API
 - 阶段契约（保证实现可执行、可交付）
 - 可执行故障处理（症状 -> 定位 -> 修复）
-- UE5.6/UE5.7 兼容说明
+- Windows CRLF 环境可用的校验流程
 
 ### 推荐使用流程
 
@@ -175,9 +182,10 @@ This skill pack is still in active iteration.
 
 ```powershell
 python .\skills\scripts\validate_skills.py
+python .\skills\scripts\validate_engine_anchors.py --engine-root "E:\UEVersion\UE_5.8"
 ```
 
-期望输出：`Validation OK`
+期望输出：`Validation OK` 和 `Engine anchor validation OK`
 
 ### 风险提示
 

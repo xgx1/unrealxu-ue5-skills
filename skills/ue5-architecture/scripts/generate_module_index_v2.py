@@ -3,8 +3,10 @@ from __future__ import annotations
 
 import argparse
 import csv
+import json
 import os
 import re
+import shutil
 import sys
 from collections import Counter
 from dataclasses import dataclass
@@ -14,6 +16,8 @@ from pathlib import Path
 
 SKILL_DIR = Path(__file__).resolve().parent.parent
 OUT_DIR = SKILL_DIR / "references"
+MODULE_ROUTER_REFERENCE_DIR = SKILL_DIR.parent / "ue5-module-router" / "references"
+SUPPORTED_ENGINE_VERSIONS = ("5.8", "5.7", "5.6")
 
 
 @dataclass(frozen=True)
@@ -273,7 +277,7 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         "--engine-source",
         type=Path,
         default=None,
-        help="Path to Engine/Source. If omitted, auto-detect UE_5.7 then UE_5.6.",
+        help="Path to Engine/Source. If omitted, auto-detect UE_5.8, UE_5.7, then UE_5.6.",
     )
     parser.add_argument(
         "--out-dir",
@@ -285,13 +289,13 @@ def parse_args(argv: list[str]) -> argparse.Namespace:
         "--engine-version",
         type=str,
         default=None,
-        help="Optional preferred engine version (for example: 5.7 or 5.6).",
+        help="Optional preferred engine version (5.8, 5.7, or 5.6).",
     )
     return parser.parse_args(argv)
 
 
 def normalize_engine_source(path_like: Path) -> Path:
-    # Accept either the engine root (e.g. UE_5.7) or Engine/Source directly.
+    # Accept either the engine root (e.g. UE_5.8) or Engine/Source directly.
     p = path_like.expanduser()
     if p.name.lower() == "source" and p.parent.name.lower() == "engine":
         return p
@@ -313,8 +317,8 @@ def default_engine_candidates(preferred_version: str | None) -> list[Path]:
         Path(r"C:\UEVersion"),
         Path(r"C:\Program Files\Epic Games"),
     ]
-    version_tokens = ["5.7", "5.6"]
-    if preferred_version in {"5.6", "5.7"}:
+    version_tokens = list(SUPPORTED_ENGINE_VERSIONS)
+    if preferred_version in SUPPORTED_ENGINE_VERSIONS:
         version_tokens = [preferred_version] + [v for v in version_tokens if v != preferred_version]
 
     engine_candidates: list[Path] = []
@@ -336,6 +340,17 @@ def resolve_engine_source(override: Path | None, preferred_version: str | None) 
 
 
 def detect_engine_version(engine_source: Path) -> str:
+    build_version = engine_source.parent / "Build" / "Build.version"
+    if build_version.exists():
+        try:
+            data = json.loads(build_version.read_text(encoding="utf-8-sig"))
+            major = int(data["MajorVersion"])
+            minor = int(data["MinorVersion"])
+            patch = int(data.get("PatchVersion", 0))
+            return f"{major}.{minor}.{patch}"
+        except (KeyError, TypeError, ValueError, json.JSONDecodeError):
+            pass
+
     joined = str(engine_source)
     m = re.search(r"UE_(\d+\.\d+)", joined, flags=re.IGNORECASE)
     if m:
@@ -435,6 +450,12 @@ def main(argv: list[str]) -> int:
                 }
             )
 
+    module_router_csv: Path | None = None
+    if out_dir.resolve() == OUT_DIR.resolve():
+        MODULE_ROUTER_REFERENCE_DIR.mkdir(parents=True, exist_ok=True)
+        module_router_csv = MODULE_ROUTER_REFERENCE_DIR / csv_route.name
+        shutil.copyfile(csv_route, module_router_csv)
+
     layer_stats = Counter(r["Layer"] for r in rows)
     domain_stats = Counter(r["DomainGuessV2"] for r in rows)
     skill_stats = Counter(r["TargetSkill"] for r in rows)
@@ -442,7 +463,7 @@ def main(argv: list[str]) -> int:
 
     md_index = out_dir / "ue5-engine-module-index-v2.md"
     lines: list[str] = []
-    lines.append("# UE5.6/UE5.7 Engine Module Index V2.3 (Draft)")
+    lines.append("# UE5.6-UE5.8 Engine Module Index V2.4")
     lines.append("")
     lines.append(f"- Engine Source: `{engine_source}`")
     lines.append(f"- Detected Engine Version: `{engine_version}`")
@@ -479,6 +500,8 @@ def main(argv: list[str]) -> int:
     print(f"Generated: {csv_index}")
     print(f"Generated: {md_index}")
     print(f"Generated: {csv_route}")
+    if module_router_csv is not None:
+        print(f"Synced: {module_router_csv}")
     print(f"Rows: {len(rows)}")
     return 0
 

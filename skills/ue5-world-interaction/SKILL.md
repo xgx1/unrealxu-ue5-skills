@@ -1,6 +1,6 @@
 ---
 name: ue5-world-interaction
-description: UE5.6/UE5.7 world interaction systems for pickups, spawners, overlap/trace checks, and visual feedback. Use when requests involve interactive world actors, spawn logic, pickup behavior, interaction radius checks, success/failure feedback, and actor lifecycle control.
+description: UE5.6-UE5.8 world interaction systems for pickups, spawners, overlap/trace checks, and visual feedback. Use when requests involve interactive world actors, spawn logic, pickup behavior, interaction radius checks, success/failure feedback, and actor lifecycle control.
 ---
 
 # Quick Start
@@ -8,7 +8,7 @@ description: UE5.6/UE5.7 world interaction systems for pickups, spawners, overla
 - Define actor set: pickup actor, optional spawner, optional visual mapping data asset.
 - Output runtime state transitions from spawn to interaction resolution.
 
-# UE5.7 API Anchors
+# API Anchors (UE5.6-UE5.8)
 - Detection anchors:
   - `USphereComponent`, `UBoxComponent`
   - `UPrimitiveComponent::OnComponentBeginOverlap`
@@ -104,9 +104,9 @@ description: UE5.6/UE5.7 world interaction systems for pickups, spawners, overla
 - Replicate result state, not raw input spam.
 - Keep cooldown/timer ownership on authority side for deterministic multiplayer behavior.
 
-# UE5.6 / UE5.7 Compatibility Notes
-- Overlap, trace, and actor lifecycle APIs listed above are stable across UE5.6 and UE5.7.
-- Prefer explicit collision profile/channel configuration in both versions.
+# UE5.6-UE5.8 Compatibility Notes
+- Overlap, trace, and actor lifecycle APIs listed above are stable across UE5.6-UE5.8.
+- Prefer explicit collision profile/channel configuration across all supported versions.
 
 # Escalation
 - Escalate when design requires persistent world state synchronization across sessions.

@@ -1,4 +1,4 @@
-# UE5.6/UE5.7 C++ Class Template
+# UE5.6-UE5.8 C++ Class Template
 
 ## Header Checklist
 - `#pragma once`

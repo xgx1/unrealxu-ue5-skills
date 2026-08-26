@@ -1,6 +1,6 @@
 ---
 name: ue5-blueprint-workflow
-description: UE5.6/UE5.7 Blueprint graph workflow for feature implementation, input events, node wiring, and graph validation. Use when requests involve adding Blueprint logic, keyboard input behavior, function chains, event graph edits, or pin-level connection guidance.
+description: UE5.6-UE5.8 Blueprint graph workflow for feature implementation, input events, node wiring, and graph validation. Use when requests involve adding Blueprint logic, keyboard input behavior, function chains, event graph edits, or pin-level connection guidance.
 ---
 
 # Quick Start
@@ -9,7 +9,7 @@ description: UE5.6/UE5.7 Blueprint graph workflow for feature implementation, in
 - Decide input route first: legacy key event or Enhanced Input action event.
 - Produce graph-level steps first, then exact node/pin wiring details.
 
-# UE5.7 API Anchors
+# API Anchors (UE5.6-UE5.8)
 - Keyboard and event node anchors:
   - `UK2Node_InputKey`, `UK2Node_InputAction`, `UK2Node_InputActionEvent`
   - `UK2Node_CallFunction`, `UK2Node_CustomEvent`
@@ -86,9 +86,10 @@ description: UE5.6/UE5.7 Blueprint graph workflow for feature implementation, in
   - Locate: broken links after node replacement or stale function signatures.
   - Fix: reconnect required pins and refresh function node signatures.
 
-# UE5.6 / UE5.7 Compatibility Notes
-- Core Blueprint graph nodes above are stable across UE5.6 and UE5.7.
-- Prefer Enhanced Input path for new implementations in both versions.
+# UE5.6-UE5.8 Compatibility Notes
+- Core Blueprint graph nodes above are stable across UE5.6-UE5.8.
+- UE5.8 adds an Enhanced Input UI Input Debugger; use it when available, while keeping log and mapping-context checks valid for 5.6/5.7.
+- Prefer Enhanced Input path for new implementations across all supported versions.
 
 # Escalation
 - Escalate when behavior requires C++ extension, custom latent nodes, or engine plugin changes.

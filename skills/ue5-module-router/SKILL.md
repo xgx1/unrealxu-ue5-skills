@@ -1,6 +1,6 @@
 ---
 name: ue5-module-router
-description: Route UE5.6/UE5.7 questions to the most precise skill using module names, aliases, intent keywords, and layer context. Works for explicit module prompts (RenderCore, AIModule, AssetRegistry) and natural language requests.
+description: Route UE5.6-UE5.8 questions to the most precise skill using module names, aliases, intent keywords, and layer context. Works for explicit module prompts (RenderCore, AIModule, AssetRegistry) and natural language requests.
 ---
 
 # Quick Start

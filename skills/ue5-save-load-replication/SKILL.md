@@ -1,6 +1,6 @@
 ---
 name: ue5-save-load-replication
-description: UE5.6/UE5.7 save/load and multiplayer replication workflow for gameplay systems. Use when requests involve SaveGame schema design, serialization, restore pipelines, RepNotify handling, RPC entry points, and server-authoritative validation.
+description: UE5.6-UE5.8 save/load and multiplayer replication workflow for gameplay systems. Use when requests involve SaveGame schema design, serialization, restore pipelines, RepNotify handling, RPC entry points, and server-authoritative validation.
 ---
 
 # Quick Start
@@ -8,7 +8,7 @@ description: UE5.6/UE5.7 save/load and multiplayer replication workflow for game
 - Separate local save state from network runtime state.
 - Output data schema, save flow, load flow, and net flow.
 
-# UE5.7 API Anchors
+# API Anchors (UE5.6-UE5.8)
 - Save pipeline anchors:
   - `USaveGame`
   - `UGameplayStatics::CreateSaveGameObject(...)`
@@ -105,9 +105,10 @@ description: UE5.6/UE5.7 save/load and multiplayer replication workflow for game
 - Use replication for authoritative state fan-out; use SaveGame for disk persistence.
 - Never trust client-local save data as authoritative multiplayer input.
 
-# UE5.6 / UE5.7 Compatibility Notes
-- SaveGame and replication APIs listed above are stable across UE5.6 and UE5.7.
+# UE5.6-UE5.8 Compatibility Notes
+- SaveGame and replication APIs listed above are stable across UE5.6-UE5.8.
 - Prefer stable Engine runtime APIs over project-specific serialization shortcuts.
+- Iris is production-ready in UE5.8, but do not assume an existing 5.6/5.7 project has migrated to Iris; detect the project's active replication system before giving system-specific guidance.
 
 # Escalation
 - Escalate when changes break existing save compatibility policy.

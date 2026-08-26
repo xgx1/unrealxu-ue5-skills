@@ -1,6 +1,6 @@
 ---
 name: ue5-debug-validation
-description: UE5.6/UE5.7 debugging and validation workflow for logs, asset checks, and regression triage. Use when requests involve troubleshooting why gameplay does not work, validating expected output, narrowing minimal repro, and producing concrete fix steps.
+description: UE5.6-UE5.8 debugging and validation workflow for logs, asset checks, and regression triage. Use when requests involve troubleshooting why gameplay does not work, validating expected output, narrowing minimal repro, and producing concrete fix steps.
 ---
 
 # Quick Start
@@ -8,7 +8,7 @@ description: UE5.6/UE5.7 debugging and validation workflow for logs, asset check
 - Collect output log lines and relevant actor/asset state.
 - Classify fault domain: data, Blueprint, C++, networking, or editor config.
 
-# UE5.7 API Anchors
+# API Anchors (UE5.6-UE5.8)
 - Core diagnostics anchors:
   - `UE_LOG(...)`
   - `ensure(...)`, `ensureMsgf(...)`
@@ -99,8 +99,8 @@ description: UE5.6/UE5.7 debugging and validation workflow for logs, asset check
 - Always provide a verification checklist for the proposed fix.
 - Always state residual risk when confidence is below high.
 
-# UE5.6 / UE5.7 Compatibility Notes
-- Logging/assertion/message/asset-registry APIs listed above are stable across UE5.6/UE5.7.
+# UE5.6-UE5.8 Compatibility Notes
+- Logging/assertion/message/asset-registry APIs listed above are stable across UE5.6-UE5.8.
 - Prefer runtime-safe diagnostics for validation paths that must run outside editor.
 
 # Escalation

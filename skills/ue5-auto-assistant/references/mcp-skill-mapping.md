@@ -1,4 +1,4 @@
-# MCP Skill Mapping (UE5.6/UE5.7)
+# MCP Skill Mapping (UE5.6-UE5.8)
 
 This file defines skill-to-tool mapping for deterministic routing.
 
@@ -57,6 +57,14 @@ This file defines skill-to-tool mapping for deterministic routing.
   - `material`, `character`
 - avoid:
   - `run_console_command` for level switching when `open_level` exists
+
+## ue5-pcg-building
+- whitelist:
+  - `asset_search`, `blueprint_query`, `get_output_log`, `capture_viewport`
+- graylist:
+  - `task_submit`, `task_status`, `task_result`
+- avoid:
+  - `execute_script` before PCG graph, asset, and log inspection paths are exhausted
 
 ## ue5-debug-validation
 - whitelist:

@@ -17,6 +17,9 @@ def has_utf8_bom(raw: bytes) -> bool:
 
 
 def parse_frontmatter(text: str) -> dict[str, str] | None:
+    # Git commonly checks files out with CRLF on Windows. Normalize all newline
+    # styles so frontmatter validation behaves identically on every platform.
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
     if not text.startswith("---\n"):
         return None
     end = text.find("\n---\n", 4)

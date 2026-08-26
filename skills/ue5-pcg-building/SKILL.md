@@ -1,6 +1,6 @@
 ---
 name: ue5-pcg-building
-description: UE5.6/UE5.7 PCG building generation workflow for modular buildings, blockouts, facade rules, and runtime generation. Use when requests involve Procedural Content Generation (PCG), Shape Grammar, lot-based building spawn, deterministic random seeds, density/filter pipelines, or converting designer constraints into reusable PCG graphs.
+description: UE5.6-UE5.8 PCG building generation workflow for modular buildings, blockouts, facade rules, and runtime generation. Use when requests involve Procedural Content Generation (PCG), Shape Grammar, lot-based building spawn, deterministic random seeds, density/filter pipelines, or converting designer constraints into reusable PCG graphs.
 ---
 
 # Quick Start
@@ -9,15 +9,16 @@ description: UE5.6/UE5.7 PCG building generation workflow for modular buildings,
 - Define runtime mode: static bake, on-demand, or runtime scheduled generation.
 - Define output mode: Static Mesh instances first, Spawn Actor only for interactive/stateful parts.
 
-# UE5.7 API Anchors
+# API Anchors (UE5.6-UE5.8)
 - Runtime trigger and radii live on `UPCGComponent`:
   - `EPCGComponentGenerationTrigger::GenerateAtRuntime`
   - `bOverrideGenerationRadii`, `GenerationRadii`, `SchedulingPolicyClass`, `SchedulingPolicy`
   - `GenerateLocal(...)`, `Cleanup(...)`
 - Runtime scheduler refresh lives on `UPCGSubsystem`:
-  - `RefreshRuntimeGenComponent(...)`
-  - `RefreshAllRuntimeGenComponents(...)`
-  - `CleanupLocalComponentsImmediate(...)`
+  - UE5.6/UE5.7: `RefreshRuntimeGenComponent(...)`, `RefreshAllRuntimeGenComponents(...)`
+  - UE5.8: `RefreshRuntimeGenExecutionSource(...)`, `RefreshAllRuntimeGenExecutionSources(...)`
+  - UE5.8 deferred refresh: `DirtyRuntimeGenExecutionSources(...)`
+  - Shared cleanup API: `CleanupLocalComponentsImmediate(...)`
 - Output selection anchor classes:
   - `UPCGStaticMeshSpawnerSettings` for high-count rendering
   - `UPCGSpawnActorSettings` for interactive/stateful outputs
@@ -82,7 +83,7 @@ description: UE5.6/UE5.7 PCG building generation workflow for modular buildings,
 - Debug method: run staged checks for overlap, navigation impact, per-cell generation time, and deterministic replay.
 
 # Constraints
-- Keep the main pipeline compatible with both UE5.6 and UE5.7 unless a version-specific note is required.
+- Keep the main pipeline compatible with UE5.6-UE5.8 unless a version-specific note is required.
 - Runtime generation must explicitly set:
   - `GenerationTrigger = GenerateAtRuntime`
   - explicit `GenerationRadii` (do not rely on implicit defaults)
@@ -130,11 +131,13 @@ description: UE5.6/UE5.7 PCG building generation workflow for modular buildings,
 - Use immediate local cleanup when bounds shrink or partition ownership changed.
 - After cleanup, trigger local regeneration only for affected runtime scope.
 
-# UE5.6 / UE5.7 Compatibility Notes
-- Core runtime trigger and grammar APIs above are stable in UE5.6 and UE5.7.
+# UE5.6-UE5.8 Compatibility Notes
+- Core runtime trigger and grammar APIs above are stable in UE5.6-UE5.8.
+- UE5.8 adds non-destructive manual editing and complex metadata attribute values; treat these as optional 5.8 capabilities rather than requirements for cross-version graphs.
 - Header path difference for subsystem:
   - UE5.6 commonly uses `Public/PCGSubsystem.h`
-  - UE5.7 commonly uses `Public/Subsystems/PCGSubsystem.h`
+  - UE5.7/UE5.8 use `Public/Subsystems/PCGSubsystem.h` and include `Subsystems/PCGSubsystem.h`
+- UE5.8 deprecates component-named scheduler refresh calls. Use the `IPCGGraphExecutionSource`-based APIs in 5.8 code; retain the component-based calls only for 5.6/5.7 branches.
 
 # Escalation
 - Escalate when architecture requires custom C++ PCG elements or engine plugin extension.

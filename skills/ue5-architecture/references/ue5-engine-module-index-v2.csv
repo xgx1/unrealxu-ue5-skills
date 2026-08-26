@@ -19,6 +19,7 @@ AutomationDriver,Developer,General,Developer\AutomationDriver\AutomationDriver.B
 AutomationWindow,Developer,General,Developer\AutomationWindow\AutomationWindow.Build.cs,unreal|module|automation|window,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 BlankModule,Developer,General,Developer\BlankModule\BlankModule.Build.cs,unreal|module|blank,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 BSPUtils,Developer,General,Developer\BSPUtils\BSPUtils.Build.cs,unreal|module|bsputils,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+ChaosTestHarness,Developer,Physics,Developer\ChaosTestHarness\ChaosTestHarness.Build.cs,physics|chaos|collision|test|harness,ue5-world-interaction,ue5-cpp-gameplay,medium,domain_mapping
 CollectionManager,Developer,General,Developer\CollectionManager\CollectionManager.Build.cs,unreal|module|collection|manager,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 CollisionAnalyzer,Developer,Physics,Developer\CollisionAnalyzer\CollisionAnalyzer.Build.cs,physics|chaos|collision|analyzer,ue5-world-interaction,ue5-cpp-gameplay,medium,domain_mapping
 CookedEditor,Developer,General,Developer\CookedEditor\CookedEditor.Build.cs,unreal|module|cooked,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -43,6 +44,7 @@ EditorAnalyticsSession,Developer,General,Developer\EditorAnalyticsSession\Editor
 ExternalImagePicker,Developer,General,Developer\ExternalImagePicker\ExternalImagePicker.Build.cs,unreal|module|external|image|picker,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 FileUtilities,Developer,General,Developer\FileUtilities\FileUtilities.Build.cs,unreal|module|file|utilities,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 FunctionalTesting,Developer,General,Developer\FunctionalTesting\FunctionalTesting.Build.cs,unreal|module|functional|testing,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+GDKPlatformEditor,Developer,General,Developer\Microsoft\GDKPlatformEditor\GDKPlatformEditor.Build.cs,unreal|module|gdkplatform|microsoft,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 GeometryProcessingInterfaces,Developer,General,Developer\GeometryProcessingInterfaces\GeometryProcessingInterfaces.Build.cs,unreal|module|geometry|processing|interfaces,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 GraphColor,Developer,General,Developer\GraphColor\GraphColor.Build.cs,unreal|module|graph|color,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 HierarchicalLODUtilities,Developer,General,Developer\HierarchicalLODUtilities\HierarchicalLODUtilities.Build.cs,unreal|module|hierarchical|lodutilities,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -53,6 +55,7 @@ IOSPlatformEditor,Developer,General,Developer\IOS\IOSPlatformEditor\IOSPlatformE
 IOSTargetPlatform,Developer,General,Developer\IOS\IOSTargetPlatform\IOSTargetPlatform.Build.cs,unreal|module|iostarget|platform|ios,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 IOSTargetPlatformControls,Developer,General,Developer\IOS\IOSTargetPlatformControls\IOSTargetPlatformControls.Build.cs,unreal|module|iostarget|platform|controls|ios,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 IOSTargetPlatformSettings,Developer,General,Developer\IOS\IOSTargetPlatformSettings\IOSTargetPlatformSettings.Build.cs,unreal|module|iostarget|platform|settings|ios,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+IoStoreOnDemandUtilities,Developer,General,Developer\IoStore\OnDemandUtilities\IoStoreOnDemandUtilities.Build.cs,unreal|module|store|demand|utilities,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 IoStoreUtilities,Developer,General,Developer\IoStoreUtilities\IoStoreUtilities.Build.cs,unreal|module|store|utilities,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 LauncherServices,Developer,General,Developer\LauncherServices\LauncherServices.Build.cs,unreal|module|launcher|services,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 LegacyProjectLauncher,Developer,General,Developer\LegacyProjectLauncher\LegacyProjectLauncher.Build.cs,unreal|module|legacy|project|launcher,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -105,6 +108,7 @@ ShaderCompilerCommon,Developer,Rendering,Developer\ShaderCompilerCommon\ShaderCo
 ShaderFormatD3D,Developer,Rendering,Developer\Windows\ShaderFormatD3D\ShaderFormatD3D.Build.cs,render|shader|rhi|format|windows,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 ShaderFormatOpenGL,Developer,Rendering,Developer\ShaderFormatOpenGL\ShaderFormatOpenGL.Build.cs,render|shader|rhi|format|open,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 ShaderFormatVectorVM,Developer,Rendering,Developer\ShaderFormatVectorVM\ShaderFormatVectorVM.Build.cs,render|shader|rhi|format|vector,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
+ShaderPlatformConfigEditor,Developer,Rendering,Developer\ShaderPlatformConfigEditor\ShaderPlatformConfigEditor.Build.cs,render|shader|rhi|platform|config,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 ShaderPreprocessor,Developer,Rendering,Developer\ShaderPreprocessor\ShaderPreprocessor.Build.cs,render|shader|rhi|preprocessor,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 SharedSettingsWidgets,Developer,General,Developer\SharedSettingsWidgets\SharedSettingsWidgets.Build.cs,unreal|module|shared|settings|widgets,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 SkeletalMeshUtilitiesCommon,Developer,Animation,Developer\SkeletalMeshUtilitiesCommon\SkeletalMeshUtilitiesCommon.Build.cs,animation|skeletal|rig|mesh|utilities|common,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
@@ -118,6 +122,7 @@ SourceControlCheckInPrompt,Developer,General,Developer\SourceControlCheckInPromp
 SourceControlViewport,Developer,General,Developer\SourceControlViewport\SourceControlViewport.Build.cs,unreal|module|control|viewport,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 StandaloneRenderer,Developer,Rendering,Developer\StandaloneRenderer\StandaloneRenderer.Build.cs,render|shader|rhi|standalone|renderer,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 StructUtilsTestSuite,Developer,General,Developer\StructUtilsTestSuite\StructUtilsTestSuite.Build.cs,unreal|module|struct|utils|test|suite,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+SubmitToolCore,Developer,CoreEngine,Developer\SubmitToolCore\SubmitToolCore.Build.cs,core|engine|uobject|submit|tool,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 TargetDeviceServices,Developer,General,Developer\TargetDeviceServices\TargetDeviceServices.Build.cs,unreal|module|target|device|services,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 TargetPlatform,Developer,General,Developer\TargetPlatform\TargetPlatform.Build.cs,unreal|module|target|platform,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 TextureBuild,Developer,General,Developer\TextureBuild\TextureBuild.Build.cs,unreal|module|texture,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -128,6 +133,7 @@ TextureFormatASTC,Developer,General,Developer\TextureFormatASTC\TextureFormatAST
 TextureFormatDXT,Developer,General,Developer\TextureFormatDXT\TextureFormatDXT.Build.cs,unreal|module|texture|format|dxt,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 TextureFormatETC2,Developer,General,Developer\TextureFormatETC2\TextureFormatETC2.Build.cs,unreal|module|texture|format|etc2,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 TextureFormatIntelISPCTexComp,Developer,General,Developer\TextureFormatIntelISPCTexComp\TextureFormatIntelISPCTexComp.Build.cs,unreal|module|texture|format|intel|ispctex|comp,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+TextureFormatOodle,Developer,General,Developer\TextureFormatOodle\Source\TextureFormatOodle.Build.cs,unreal|module|texture|format|oodle,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 TextureFormatUncompressed,Developer,General,Developer\TextureFormatUncompressed\TextureFormatUncompressed.Build.cs,unreal|module|texture|format|uncompressed,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 ToolMenus,Developer,General,Developer\ToolMenus\ToolMenus.Build.cs,unreal|module|tool|menus,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 ToolWidgets,Developer,General,Developer\ToolWidgets\ToolWidgets.Build.cs,unreal|module|tool|widgets,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -156,6 +162,7 @@ WindowsTargetPlatform,Developer,General,Developer\Windows\WindowsTargetPlatform\
 WindowsTargetPlatformControls,Developer,General,Developer\Windows\WindowsTargetPlatfomControls\WindowsTargetPlatformControls.Build.cs,unreal|module|windows|target|controls|platform|platfom,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 WindowsTargetPlatformSettings,Developer,General,Developer\Windows\WindowsTargetPlatformSettings\WindowsTargetPlatformSettings.Build.cs,unreal|module|windows|target|platform|settings,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 Zen,Developer,General,Developer\Zen\Zen.Build.cs,unreal|module|zen,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+ZenOplogUtils,Developer,General,Developer\ZenOplogUtils\ZenOplogUtils.Build.cs,unreal|module|zen|oplog|utils,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 ActionableMessage,Editor,General,Editor\ActionableMessage\ActionableMessage.build.cs,unreal|module|actionable|message,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 ActorPickerMode,Editor,General,Editor\ActorPickerMode\ActorPickerMode.Build.cs,unreal|module|actor|picker|mode,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 AddContentDialog,Editor,General,Editor\AddContentDialog\AddContentDialog.Build.cs,unreal|module|add|content|dialog,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -217,7 +224,9 @@ GraphEditor,Editor,General,Editor\GraphEditor\GraphEditor.Build.cs,unreal|module
 HardwareTargeting,Editor,General,Editor\HardwareTargeting\HardwareTargeting.Build.cs,unreal|module|hardware|targeting,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 HierarchicalLODOutliner,Editor,General,Editor\HierarchicalLODOutliner\HierarchicalLODOutliner.Build.cs,unreal|module|hierarchical|lodoutliner,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 InputBindingEditor,Editor,GameplayFramework,Editor\InputBindingEditor\InputBindingEditor.Build.cs,gameplay|ability|input|binding,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
+InputBindingSettingsViewer,Editor,GameplayFramework,Editor\InputBindingSettingsViewer\InputBindingSettingsViewer.Build.cs,gameplay|ability|input|binding|settings|viewer,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 InternationalizationSettings,Editor,General,Editor\InternationalizationSettings\InternationalizationSettings.Build.cs,unreal|module|internationalization|settings,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+JsonUtilitiesEditor,Editor,General,Editor\JsonUtilitiesEditor\JsonUtilitiesEditor.Build.cs,unreal|module|json|utilities,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 Kismet,Editor,General,Editor\Kismet\Kismet.Build.cs,unreal|module|kismet,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 KismetCompiler,Editor,General,Editor\KismetCompiler\KismetCompiler.Build.cs,unreal|module|kismet|compiler,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 KismetWidgets,Editor,General,Editor\KismetWidgets\KismetWidgets.Build.cs,unreal|module|kismet|widgets,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -234,6 +243,7 @@ MassEntityEditor,Editor,AI_Mass,Editor\MassEntityEditor\MassEntityEditor.Build.c
 MaterialEditor,Editor,Rendering,Editor\MaterialEditor\MaterialEditor.Build.cs,render|shader|rhi|material,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 MergeActors,Editor,General,Editor\MergeActors\MergeActors.Build.cs,unreal|module|merge|actors,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 MeshPaint,Editor,General,Editor\MeshPaint\MeshPaint.Build.cs,unreal|module|mesh|paint,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+MirrorDataTableEditor,Editor,General,Editor\MirrorDataTableEditor\MirrorDataTableEditor.Build.cs,unreal|module|mirror|data|table,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 MovieSceneCaptureDialog,Editor,Media,Editor\MovieSceneCaptureDialog\MovieSceneCaptureDialog.Build.cs,media|movie|video|scene|capture|dialog,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 MovieSceneTools,Editor,Media,Editor\MovieSceneTools\MovieSceneTools.Build.cs,media|movie|video|scene|tools,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 NewLevelDialog,Editor,General,Editor\NewLevelDialog\NewLevelDialog.Build.cs,unreal|module|new|level|dialog,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -262,7 +272,6 @@ SequencerCore,Editor,CoreEngine,Editor\SequencerCore\SequencerCore.Build.cs,core
 SequenceRecorder,Editor,General,Editor\SequenceRecorder\SequenceRecorder.Build.cs,unreal|module|sequence|recorder,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 SequenceRecorderSections,Editor,General,Editor\SequenceRecorderSections\SequenceRecorderSections.Build.cs,unreal|module|sequence|recorder|sections,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 SequencerWidgets,Editor,General,Editor\SequencerWidgets\SequencerWidgets.Build.cs,unreal|module|sequencer|widgets,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
-SerializedRecorderInterface,Editor,General,Editor\SerializedRecorderInterface\SerializedRecorderInterface.Build.cs,unreal|module|serialized|recorder|interface,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 SkeletalMeshEditor,Editor,Animation,Editor\SkeletalMeshEditor\SkeletalMeshEditor.Build.cs,animation|skeletal|rig|mesh,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 SkeletonEditor,Editor,General,Editor\SkeletonEditor\SkeletonEditor.Build.cs,unreal|module|skeleton,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 SourceControlWindowExtender,Editor,General,Editor\SourceControlWindowExtender\SourceControlWindowExtender.Build.cs,unreal|module|control|window|extender,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -306,6 +315,7 @@ AdvancedWidgets,Runtime,General,Runtime\AdvancedWidgets\AdvancedWidgets.Build.cs
 Advertising,Runtime,General,Runtime\Advertising\Advertising\Advertising.Build.cs,unreal|module|advertising,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 AIModule,Runtime,AI_Mass,Runtime\AIModule\AIModule.Build.cs,ai|nav|mass|aimodule,ue5-cpp-gameplay,ue5-architecture,high,module_override
 Analytics,Runtime,General,Runtime\Analytics\Analytics\Analytics.Build.cs,unreal|module|analytics,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+AnalyticsCSV,Runtime,General,Runtime\Analytics\AnalyticsCSV\AnalyticsCSV.Build.cs,unreal|module|analytics|csv,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 AnalyticsET,Runtime,General,Runtime\Analytics\AnalyticsET\AnalyticsET.Build.cs,unreal|module|analytics,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 AnalyticsHorde,Runtime,General,Runtime\Analytics\AnalyticsHorde\AnalyticsHorde.Build.cs,unreal|module|analytics|horde,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 AnalyticsLog,Runtime,General,Runtime\Analytics\AnalyticsLog\AnalyticsLog.Build.cs,unreal|module|analytics|log,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -325,6 +335,7 @@ AudioCaptureAudioUnit,Runtime,Audio,Runtime\AudioCaptureImplementations\IOS\Audi
 AudioCaptureCore,Runtime,CoreEngine,Runtime\AudioCaptureCore\AudioCaptureCore.Build.cs,core|engine|uobject|audio|capture,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 AudioCaptureRtAudio,Runtime,Audio,Runtime\AudioCaptureImplementations\AudioCaptureRtAudio\AudioCaptureRtAudio.Build.cs,audio|sound|metasound|capture|implementations,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 AudioCaptureWasapi,Runtime,Audio,Runtime\AudioCaptureImplementations\Windows\AudioCaputureWasapi\AudioCaptureWasapi.Build.cs,audio|sound|metasound|capture|wasapi|implementations|windows|caputure,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
+AudioChannelAgnosticCore,Runtime,CoreEngine,Runtime\AudioChannelAgnosticCore\AudioChannelAgnosticCore.Build.cs,core|engine|uobject|audio|channel|agnostic,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 AudioExtensions,Runtime,Audio,Runtime\AudioExtensions\AudioExtensions.Build.cs,audio|sound|metasound|extensions,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 AudioLinkCore,Runtime,CoreEngine,Runtime\AudioLink\AudioLinkCore\AudioLinkCore.Build.cs,core|engine|uobject|audio|link,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 AudioLinkEngine,Runtime,CoreEngine,Runtime\AudioLink\AudioLinkEngine\AudioLinkEngine.Build.cs,core|engine|uobject|audio|link,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -348,6 +359,9 @@ AVEncoder,Runtime,General,Runtime\AVEncoder\AVEncoder.Build.cs,unreal|module|ave
 AVIWriter,Runtime,General,Runtime\AVIWriter\AVIWriter.Build.cs,unreal|module|aviwriter,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 BackgroundHTTP,Runtime,NetworkingOnline,Runtime\Online\BackgroundHTTP\BackgroundHTTP.Build.cs,network|online|replication|background|http,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
 BackgroundHTTPFileHash,Runtime,NetworkingOnline,Runtime\Online\BackgroundHTTPFileHash\BackgroundHTTPFileHash.Build.cs,network|online|replication|background|httpfile|hash,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
+BackgroundHttpIOS,Runtime,NetworkingOnline,Runtime\Apple\BackgroundHttpIOS\BackgroundHttpIOS.build.cs,network|online|replication|background|http|ios|apple,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
+BandwidthDebugDelegates,Runtime,NetworkingOnline,Runtime\Online\Experimental\BandwidthDebugDelegates\BandwidthDebugDelegates.Build.cs,network|online|replication|bandwidth|debug|delegates|experimental,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
+BandwidthMeasurementTool,Runtime,NetworkingOnline,Runtime\Online\Experimental\BandwidthMeasurementTool\BandwidthMeasurementTool.Build.cs,network|online|replication|bandwidth|measurement|tool|experimental,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
 BinkAudioDecoder,Runtime,Audio,Runtime\BinkAudioDecoder\Module\BinkAudioDecoder.Build.cs,audio|sound|metasound|bink|decoder,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 BlueprintRuntime,Runtime,General,Runtime\BlueprintRuntime\BlueprintRuntime.Build.cs,unreal|module|blueprint,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 BuildPatchServices,Runtime,NetworkingOnline,Runtime\Online\BuildPatchServices\BuildPatchServices.Build.cs,network|online|replication|patch|services,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
@@ -360,16 +374,17 @@ CEF3Utils,Runtime,General,Runtime\CEF3Utils\CEF3Utils.Build.cs,unreal|module|cef
 Chaos,Runtime,Physics,Runtime\Experimental\Chaos\Chaos.Build.cs,physics|chaos|collision|experimental,ue5-world-interaction,ue5-cpp-gameplay,high,module_override
 ChaosCore,Runtime,CoreEngine,Runtime\Experimental\ChaosCore\ChaosCore.Build.cs,core|engine|uobject|chaos|experimental,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 ChaosSolverEngine,Runtime,CoreEngine,Runtime\Experimental\ChaosSolverEngine\ChaosSolverEngine.Build.cs,core|engine|uobject|chaos|solver|experimental,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+ChaosSpatialPartitions,Runtime,Physics,Runtime\Experimental\ChaosSpatialPartitions\ChaosSpatialPartitions.Build.cs,physics|chaos|collision|spatial|partitions|experimental,ue5-world-interaction,ue5-cpp-gameplay,medium,domain_mapping
 ChaosVDData,Runtime,Physics,Runtime\Experimental\ChaosVDData\ChaosVDData.build.cs,physics|chaos|collision|vddata|experimental,ue5-world-interaction,ue5-cpp-gameplay,medium,domain_mapping
 ChaosVDRuntime,Runtime,Physics,Runtime\Experimental\ChaosVisualDebugger\ChaosVDRuntime.Build.cs,physics|chaos|collision|vdruntime|experimental|visual|debugger,ue5-world-interaction,ue5-cpp-gameplay,medium,domain_mapping
 ChaosVehiclesCore,Runtime,CoreEngine,Runtime\Experimental\ChaosVehicles\ChaosVehiclesCore\ChaosVehiclesCore.Build.cs,core|engine|uobject|chaos|vehicles|experimental,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 ChaosVehiclesEngine,Runtime,CoreEngine,Runtime\Experimental\ChaosVehicles\ChaosVehiclesEngine\ChaosVehiclesEngine.Build.cs,core|engine|uobject|chaos|vehicles|experimental,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 CinematicCamera,Runtime,General,Runtime\CinematicCamera\CinematicCamera.Build.cs,unreal|module|cinematic|camera,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+ClientBandwidthDebugVisualizer,Runtime,NetworkingOnline,Runtime\Online\Experimental\ClientBandwidthDebugVisualizer\ClientBandwidthDebugVisualizer.Build.cs,network|online|replication|client|bandwidth|debug|visualizer|experimental,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
 ClientPilot,Runtime,General,Runtime\ClientPilot\ClientPilot.Build.cs,unreal|module|client|pilot,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 ClothingSystemRuntimeCommon,Runtime,General,Runtime\ClothingSystemRuntimeCommon\ClothingSystemRuntimeCommon.Build.cs,unreal|module|clothing|system|common,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 ClothingSystemRuntimeInterface,Runtime,General,Runtime\ClothingSystemRuntimeInterface\ClothingSystemRuntimeInterface.Build.cs,unreal|module|clothing|system|interface,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 ClothingSystemRuntimeNv,Runtime,General,Runtime\ClothingSystemRuntimeNv\ClothingSystemRuntimeNv.Build.cs,unreal|module|clothing|system,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
-ColorManagement,Runtime,General,Runtime\ColorManagement\ColorManagement.Build.cs,unreal|module|color|management,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 Constraints,Runtime,Animation,Runtime\Experimental\Animation\Constraints\Constraints.Build.cs,animation|skeletal|rig|constraints|experimental,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 CookOnTheFly,Runtime,AssetsBuildPipeline,Runtime\CookOnTheFly\CookOnTheFly.Build.cs,asset|cook|package|the|fly,ue5-performance-packaging,ue5-architecture,high,module_override
 Core,Runtime,CoreEngine,Runtime\Core\Core.Build.cs,core|engine|uobject,ue5-architecture,ue5-cpp-gameplay,high,module_override
@@ -380,17 +395,19 @@ CrashReportCore,Runtime,CoreEngine,Runtime\CrashReportCore\CrashReportCore.Build
 CUDA,Runtime,General,Runtime\CUDA\Source\CUDA.Build.cs,unreal|module|cuda,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 D3D11RHI,Runtime,Rendering,Runtime\Windows\D3D11RHI\D3D11RHI.Build.cs,render|shader|rhi|d11|windows,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 D3D12RHI,Runtime,Rendering,Runtime\D3D12RHI\D3D12RHI.Build.cs,render|shader|rhi|d12,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
-DataflowCore,Runtime,CoreEngine,Runtime\Experimental\Dataflow\Core\DataflowCore.Build.cs,core|engine|uobject|dataflow|experimental,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
-DataflowEngine,Runtime,CoreEngine,Runtime\Experimental\Dataflow\Engine\DataflowEngine.Build.cs,core|engine|uobject|dataflow|experimental,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
-DataflowSimulation,Runtime,General,Runtime\Experimental\Dataflow\Simulation\DataflowSimulation.Build.cs,unreal|module|dataflow|simulation|experimental,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+DataflowCore,Runtime,CoreEngine,Runtime\Dataflow\Core\DataflowCore.Build.cs,core|engine|uobject|dataflow,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+DataflowEngine,Runtime,CoreEngine,Runtime\Dataflow\Engine\DataflowEngine.Build.cs,core|engine|uobject|dataflow,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+DataflowSimulation,Runtime,General,Runtime\Dataflow\Simulation\DataflowSimulation.Build.cs,unreal|module|dataflow|simulation,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 DatasmithCore,Runtime,CoreEngine,Runtime\Datasmith\DatasmithCore\DatasmithCore.Build.cs,core|engine|uobject|datasmith,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 DeveloperSettings,Runtime,General,Runtime\DeveloperSettings\DeveloperSettings.Build.cs,unreal|module|settings,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 DirectLink,Runtime,General,Runtime\Datasmith\DirectLink\DirectLink.Build.cs,unreal|module|direct|link|datasmith,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+DownlinkBandwidthManager,Runtime,NetworkingOnline,Runtime\Online\Experimental\DownlinkBandwidthManager\DownlinkBandwidthManager.Build.cs,network|online|replication|downlink|bandwidth|manager|experimental,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
+DumpPackageToJson,Runtime,AssetsBuildPipeline,Runtime\Experimental\DumpPackageToJson\DumpPackageToJson.Build.cs,asset|cook|package|dump|json|experimental,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 Engine,Runtime,CoreEngine,Runtime\Engine\Engine.Build.cs,core|engine|uobject,ue5-architecture,ue5-cpp-gameplay,high,module_override
 EngineMessages,Runtime,CoreEngine,Runtime\EngineMessages\EngineMessages.Build.cs,core|engine|uobject|messages,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 EngineSettings,Runtime,CoreEngine,Runtime\EngineSettings\EngineSettings.Build.cs,core|engine|uobject|settings,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
-EventLoop,Runtime,NetworkingOnline,Runtime\Online\Experimental\EventLoop\EventLoop.Build.cs,network|online|replication|event|loop|experimental,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
-EventLoopUnitTests,Runtime,NetworkingOnline,Runtime\Online\Experimental\EventLoopTests\EventLoopUnitTests.Build.cs,network|online|replication|event|loop|tests|unit|experimental,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
+EventLoop,Runtime,NetworkingOnline,Runtime\Online\EventLoop\EventLoop.Build.cs,network|online|replication|event|loop,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
+EventLoopUnitTests,Runtime,NetworkingOnline,Runtime\Online\EventLoopTests\EventLoopUnitTests.Build.cs,network|online|replication|event|loop|tests|unit,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
 ExternalRpcRegistry,Runtime,AssetsBuildPipeline,Runtime\ExternalRPCRegistry\ExternalRpcRegistry.Build.cs,asset|cook|package|external|rpc|registry|rpcregistry,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 EyeTracker,Runtime,General,Runtime\EyeTracker\EyeTracker.Build.cs,unreal|module|eye|tracker,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 FieldNotification,Runtime,General,Runtime\FieldNotification\FieldNotification.Build.cs,unreal|module|field|notification,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -402,6 +419,9 @@ GameplayDebugger,Runtime,GameplayFramework,Runtime\GameplayDebugger\GameplayDebu
 GameplayMediaEncoder,Runtime,GameplayFramework,Runtime\GameplayMediaEncoder\GameplayMediaEncoder.Build.cs,gameplay|ability|input|media|encoder,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 GameplayTags,Runtime,GameplayFramework,Runtime\GameplayTags\GameplayTags.Build.cs,gameplay|ability|input|tags,ue5-cpp-gameplay,ue5-architecture,high,module_override
 GameplayTasks,Runtime,GameplayFramework,Runtime\GameplayTasks\GameplayTasks.Build.cs,gameplay|ability|input|tasks,ue5-cpp-gameplay,ue5-architecture,high,module_override
+GDKPackageManifest,Runtime,General,Runtime\Microsoft\GDKPackageManifest\GDKPackageManifest.Build.cs,unreal|module|gdkpackage|manifest|microsoft,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+GDKRuntime,Runtime,General,Runtime\Microsoft\GDKRuntime\GDKRuntime.Build.cs,unreal|module|gdkruntime|microsoft,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+GDKSaveGameSystem,Runtime,General,Runtime\Microsoft\GDKSaveGameSystem\GDKSaveGameSystem.Build.cs,unreal|module|gdksave|game|system|microsoft,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 GeometryCollectionEngine,Runtime,CoreEngine,Runtime\Experimental\GeometryCollectionEngine\GeometryCollectionEngine.Build.cs,core|engine|uobject|geometry|collection|experimental,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 GeometryCore,Runtime,CoreEngine,Runtime\GeometryCore\GeometryCore.Build.cs,core|engine|uobject|geometry,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 GeometryFramework,Runtime,General,Runtime\GeometryFramework\GeometryFramework.Build.cs,unreal|module|geometry|framework,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -450,8 +470,13 @@ LiveLinkAnimationCore,Runtime,CoreEngine,Runtime\LiveLinkAnimationCore\LiveLinkA
 LiveLinkInterface,Runtime,General,Runtime\LiveLinkInterface\LiveLinkInterface.Build.cs,unreal|module|live|link|interface,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 LiveLinkMessageBusFramework,Runtime,General,Runtime\LiveLinkMessageBusFramework\LiveLinkMessageBusFramework.Build.cs,unreal|module|live|link|message|bus|framework,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 LocalFileNetworkReplayStreaming,Runtime,NetworkingOnline,Runtime\NetworkReplayStreaming\LocalFileNetworkReplayStreaming\LocalFileNetworkReplayStreaming.Build.cs,network|online|replication|replay|streaming|local|file,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
+MacMenu,Runtime,General,Runtime\Apple\MacMenu\MacMenu.Build.cs,unreal|module|mac|menu|apple,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 MarketplaceKit,Runtime,General,Runtime\IOS\MarketplaceKit\MarketplaceKit.Build.cs,unreal|module|marketplace|kit|ios,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+MassCore,Runtime,CoreEngine,Runtime\Mass\MassCore\MassCore.Build.cs,core|engine|uobject|mass,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+MassDeveloper,Runtime,AI_Mass,Runtime\Mass\MassDeveloper\MassDeveloper.Build.cs,ai|nav|mass,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
+MassEngine,Runtime,CoreEngine,Runtime\Mass\MassEngine\MassEngine.Build.cs,core|engine|uobject|mass,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 MassEntity,Runtime,AI_Mass,Runtime\MassEntity\MassEntity.Build.cs,ai|nav|mass|entity,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
+MassSignals,Runtime,AI_Mass,Runtime\Mass\MassSignals\MassSignals.Build.cs,ai|nav|mass|signals,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 MaterialShaderQualitySettings,Runtime,Rendering,Runtime\MaterialShaderQualitySettings\MaterialShaderQualitySettings.Build.cs,render|shader|rhi|material|quality|settings,ue5-performance-packaging,ue5-architecture,high,module_override
 MathCore,Runtime,CoreEngine,Runtime\MathCore\MathCore.Build.cs,core|engine|uobject|math,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 Media,Runtime,Media,Runtime\Media\Media.Build.cs,media|movie|video,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
@@ -471,6 +496,7 @@ MovieScene,Runtime,Media,Runtime\MovieScene\MovieScene.Build.cs,media|movie|vide
 MovieSceneCapture,Runtime,Media,Runtime\MovieSceneCapture\MovieSceneCapture.Build.cs,media|movie|video|scene|capture,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 MovieSceneTracks,Runtime,Media,Runtime\MovieSceneTracks\MovieSceneTracks.Build.cs,media|movie|video|scene|tracks,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 MRMesh,Runtime,General,Runtime\MRMesh\MRMesh.build.cs,unreal|module|mrmesh,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+MSGameStorePlatformFeatures,Runtime,General,Runtime\Windows\MSGaming\MSGameStorePlatformFeatures\MSGameStorePlatformFeatures.Build.cs,unreal|module|msgame|store|platform|features|windows|msgaming,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 NavigationSystem,Runtime,AI_Mass,Runtime\NavigationSystem\NavigationSystem.Build.cs,ai|nav|mass|navigation|system,ue5-cpp-gameplay,ue5-architecture,high,module_override
 Navmesh,Runtime,General,Runtime\Navmesh\Navmesh.Build.cs,unreal|module|navmesh,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 NetCommon,Runtime,NetworkingOnline,Runtime\Net\Common\NetCommon.Build.cs,network|online|replication|net|common,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
@@ -509,16 +535,20 @@ Renderer,Runtime,Rendering,Runtime\Renderer\Renderer.Build.cs,render|shader|rhi|
 RewindDebuggerRuntimeInterface,Runtime,General,Runtime\RewindDebuggerRuntimeInterface\RewindDebuggerRuntimeInterface.Build.cs,unreal|module|rewind|debugger|interface,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 RHI,Runtime,Rendering,Runtime\RHI\RHI.Build.cs,render|shader|rhi,ue5-performance-packaging,ue5-architecture,high,module_override
 RHICore,Runtime,General,Runtime\RHICore\RHICore.Build.cs,unreal|module|rhicore,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+RigidPhysics,Runtime,Physics,Runtime\Experimental\RigidPhysics\RigidPhysics.Build.cs,physics|chaos|collision|rigid|experimental,ue5-world-interaction,ue5-cpp-gameplay,medium,domain_mapping
 RSA,Runtime,General,Runtime\RSA\RSA.Build.cs,unreal|module|rsa,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 RuntimeAssetCache,Runtime,AssetsBuildPipeline,Runtime\RuntimeAssetCache\RuntimeAssetCache.Build.cs,asset|cook|package|cache,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 SandboxFile,Runtime,General,Runtime\SandboxFile\SandboxFile.Build.cs,unreal|module|sandbox|file,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 SaveGameNetworkReplayStreaming,Runtime,NetworkingOnline,Runtime\NetworkReplayStreaming\SaveGameNetworkReplayStreaming\SaveGameNetworkReplayStreaming.Build.cs,network|online|replication|replay|streaming|save|game,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
+SequenceRuntimeRecorder,Runtime,General,Runtime\SequenceRuntimeRecorder\SequenceRuntimeRecorder.Build.cs,unreal|module|sequence|recorder,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 Serialization,Runtime,AssetsBuildPipeline,Runtime\Serialization\Serialization.Build.cs,asset|cook|package|serialization,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
+SerializedRecorderInterface,Runtime,General,Runtime\SerializedRecorderInterface\SerializedRecorderInterface.Build.cs,unreal|module|serialized|recorder|interface,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 SessionMessages,Runtime,General,Runtime\SessionMessages\SessionMessages.Build.cs,unreal|module|session|messages,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 SessionServices,Runtime,General,Runtime\SessionServices\SessionServices.Build.cs,unreal|module|session|services,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 SignalProcessing,Runtime,General,Runtime\SignalProcessing\SignalProcessing.Build.cs,unreal|module|signal|processing,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 SkeletalMeshDescription,Runtime,Animation,Runtime\SkeletalMeshDescription\SkeletalMeshDescription.Build.cs,animation|skeletal|rig|mesh|description,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 Slate,Runtime,UI,Runtime\Slate\Slate.Build.cs,ui|umg|slate,ue5-ui-umg-slate,ue5-cpp-gameplay,high,module_override
+SlateBaseRenderer,Runtime,Rendering,Runtime\SlateBaseRenderer\SlateBaseRenderer.Build.cs,render|shader|rhi|slate|base|renderer,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 SlateCore,Runtime,UI,Runtime\SlateCore\SlateCore.Build.cs,ui|umg|slate|core,ue5-ui-umg-slate,ue5-cpp-gameplay,high,module_override
 SlateNullRenderer,Runtime,Rendering,Runtime\SlateNullRenderer\SlateNullRenderer.Build.cs,render|shader|rhi|slate|null|renderer,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 SlateRHIRenderer,Runtime,UI,Runtime\SlateRHIRenderer\SlateRHIRenderer.Build.cs,ui|umg|slate|rhirenderer,ue5-ui-umg-slate,ue5-cpp-gameplay,medium,domain_mapping
@@ -539,6 +569,8 @@ SynthBenchmark,Runtime,Audio,Runtime\SynthBenchmark\SynthBenchmark.Build.cs,audi
 TelemetryUtils,Runtime,General,Runtime\Analytics\TelemetryUtils\TelemetryUtils.Build.cs,unreal|module|telemetry|utils|analytics,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 TextureUtilitiesCommon,Runtime,General,Runtime\TextureUtilitiesCommon\TextureUtilitiesCommon.build.cs,unreal|module|texture|utilities|common,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 TimeManagement,Runtime,General,Runtime\TimeManagement\TimeManagement.Build.cs,unreal|module|time|management,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+TraceBasedDebuggers,Runtime,General,Runtime\Experimental\TraceBasedDebuggers\TraceBasedDebuggers.Build.cs,unreal|module|trace|based|debuggers|experimental,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
+TraceBasedDebuggersAnalysis,Runtime,General,Runtime\Experimental\TraceBasedDebuggersAnalysis\TraceBasedDebuggersAnalysis.Build.cs,unreal|module|trace|based|debuggers|analysis|experimental,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 TraceLog,Runtime,General,Runtime\TraceLog\TraceLog.Build.cs,unreal|module|trace|log,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 TypedElementFramework,Runtime,General,Runtime\TypedElementFramework\TypedElementFramework.Build.cs,unreal|module|typed|element|framework,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 TypedElementRuntime,Runtime,General,Runtime\TypedElementRuntime\TypedElementRuntime.Build.cs,unreal|module|typed|element,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -562,7 +594,9 @@ VulkanRHI,Runtime,Rendering,Runtime\VulkanRHI\VulkanRHI.Build.cs,render|shader|r
 WebBrowser,Runtime,General,Runtime\WebBrowser\WebBrowser.Build.cs,unreal|module|web|browser,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 WebBrowserTexture,Runtime,General,Runtime\WebBrowserTexture\WebBrowserTexture.Build.cs,unreal|module|web|browser|texture,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 WebSockets,Runtime,NetworkingOnline,Runtime\Online\WebSockets\WebSockets.Build.cs,network|online|replication|web|sockets,ue5-save-load-replication,ue5-cpp-gameplay,high,module_override
+WebSocketServer,Runtime,NetworkingOnline,Runtime\Online\WebSocketServer\WebSocketServer.Build.cs,network|online|replication|web|socket|server,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
 WidgetCarousel,Runtime,UI,Runtime\WidgetCarousel\WidgetCarousel.Build.cs,ui|umg|slate|widget|carousel,ue5-ui-umg-slate,ue5-cpp-gameplay,medium,domain_mapping
+WindowsD3D,Runtime,General,Runtime\Windows\WindowsD3D\WindowsD3D.Build.cs,unreal|module|windows,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 WindowsMMDeviceEnumeration,Runtime,Audio,Runtime\AudioDeviceEnumeration\Windows\WindowsMMDeviceEnumeration\WindowsMMDeviceEnumeration.Build.cs,audio|sound|metasound|windows|enumeration|mmdevice|device,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 WindowsPlatformFeatures,Runtime,General,Runtime\Windows\WindowsPlatformFeatures\WindowsPlatformFeatures.Build.cs,unreal|module|windows|platform|features,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
 XmlParser,Runtime,General,Runtime\XmlParser\XmlParser.Build.cs,unreal|module|xml|parser,ue5-architecture,ue5-cpp-gameplay,medium,domain_mapping
@@ -585,6 +619,7 @@ CEF3,ThirdParty,UI,ThirdParty\CEF3\CEF3.build.cs,ui|umg|slate|cef3|third|party,u
 ConcurrencyVisualizer,ThirdParty,General,ThirdParty\ConcurrencyVisualizer\ConcurrencyVisualizer.Build.cs,unreal|module|concurrency|visualizer|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 coremod,ThirdParty,General,ThirdParty\coremod\coremod.Build.cs,unreal|module|coremod|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 CUDAHeader,ThirdParty,Rendering,ThirdParty\NVIDIA\CUDA\CUDAHeader.Build.cs,render|shader|rhi|cudaheader|third|party|nvidia|cuda,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
+Detours,ThirdParty,General,ThirdParty\Detours\Detours.Build.cs,unreal|module|detours|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 DiaSdk,ThirdParty,General,ThirdParty\DiaSdk\DiaSdk.Build.cs,unreal|module|dia|sdk|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 DirectML,ThirdParty,Rendering,ThirdParty\DirectML\DirectML.Build.cs,render|shader|rhi|direct|third|party,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 DirectShow,ThirdParty,General,ThirdParty\DirectShow\DirectShow.Build.cs,unreal|module|direct|show|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
@@ -604,6 +639,7 @@ EOSSDK,ThirdParty,NetworkingOnline,ThirdParty\EOSSDK\EOSSDK.Build.cs,network|onl
 etc2comp,ThirdParty,AssetsBuildPipeline,ThirdParty\etc2comp\etc2comp.Build.cs,asset|cook|package|etc2comp|third|party,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 Expat,ThirdParty,AssetsBuildPipeline,ThirdParty\Expat\Expat.Build.cs,asset|cook|package|expat|third|party,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 Facebook,ThirdParty,General,ThirdParty\Facebook\Facebook.Build.cs,unreal|module|facebook|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
+FAISS,ThirdParty,General,ThirdParty\FAISS\FAISS.Build.cs,unreal|module|faiss|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 FBX,ThirdParty,AssetsBuildPipeline,ThirdParty\FBX\FBX.Build.cs,asset|cook|package|fbx|third|party,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 ForsythTriOptimizer,ThirdParty,General,ThirdParty\ForsythTriOO\ForsythTriOptimizer.Build.cs,unreal|module|forsyth|tri|optimizer|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 FreeImage,ThirdParty,General,ThirdParty\FreeImage\FreeImage.Build.cs,unreal|module|free|image|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
@@ -615,6 +651,7 @@ GoogleGameSDK,ThirdParty,General,ThirdParty\GoogleGameSDK\GoogleGameSDK.Build.cs
 GoogleOboe,ThirdParty,General,ThirdParty\GoogleOboe\GoogleOboe.Build.cs,unreal|module|google|oboe|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 GoogleTest,ThirdParty,General,ThirdParty\GoogleTest\GoogleTest.Build.cs,unreal|module|google|test|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 GPUDirect,ThirdParty,General,ThirdParty\NVIDIA\GPUDirect\GPUDirect.Build.cs,unreal|module|gpudirect|third|party|nvidia,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
+GRDK,ThirdParty,General,ThirdParty\Microsoft\GRDK\GRDK.Build.cs,unreal|module|grdk|third|party|microsoft,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 GuidelinesSupportLibrary,ThirdParty,General,ThirdParty\GuidelinesSupportLibrary\GuidelinesSupportLibrary.Build.cs,unreal|module|guidelines|support|library|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 HAPLib,ThirdParty,General,ThirdParty\HAPMedia\HAPLib\HAPLib.Build.cs,unreal|module|haplib|third|party|hapmedia,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 HarfBuzz,ThirdParty,UI,ThirdParty\HarfBuzz\HarfBuzz.Build.cs,ui|umg|slate|harf|buzz|third|party,ue5-ui-umg-slate,ue5-cpp-gameplay,medium,domain_mapping
@@ -632,6 +669,7 @@ jemalloc,ThirdParty,General,ThirdParty\jemalloc\jemalloc.Build.cs,unreal|module|
 Kiss_FFT,ThirdParty,General,ThirdParty\Kiss_FFT\Kiss_FFT.Build.cs,unreal|module|kiss|fft|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 libav,ThirdParty,General,ThirdParty\libav\libav.Build.cs,unreal|module|libav|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 libcurl,ThirdParty,NetworkingOnline,ThirdParty\libcurl\libcurl.Build.cs,network|online|replication|libcurl|third|party,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
+libdav1d,ThirdParty,General,ThirdParty\libdav1d\libdav1d.build.cs,unreal|module|libdav1d|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 libFLAC,ThirdParty,General,ThirdParty\libFLAC\libFLAC.build.cs,unreal|module|lib|flac|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 libGPUCounters,ThirdParty,General,ThirdParty\libGPUCounters\libGPUCounters.Build.cs,unreal|module|lib|gpucounters|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 LibJpegTurbo,ThirdParty,General,ThirdParty\libjpeg-turbo\LibJpegTurbo.Build.cs,unreal|module|turbo|lib|jpeg|third|party|libjpeg,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
@@ -649,6 +687,7 @@ MetalShaderConverter,ThirdParty,General,ThirdParty\Apple\MetalShaderConverter\Me
 metis,ThirdParty,General,ThirdParty\metis\metis.Build.cs,unreal|module|metis|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 MikkTSpace,ThirdParty,General,ThirdParty\MikkTSpace\MikkTSpace.build.cs,unreal|module|mikk|tspace|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 mimalloc,ThirdParty,General,ThirdParty\mimalloc\mimalloc.Build.cs,unreal|module|mimalloc|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
+mimalloc212,ThirdParty,General,ThirdParty\mimalloc\mimalloc212.Build.cs,unreal|module|mimalloc212|third|party|mimalloc,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 MsQuic,ThirdParty,General,ThirdParty\MsQuic\MsQuic.Build.cs,unreal|module|quic|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 nanoflann,ThirdParty,General,ThirdParty\nanoflann\nanoflann.Build.cs,unreal|module|nanoflann|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 nanosvg,ThirdParty,General,ThirdParty\nanosvg\nanosvg.Build.cs,unreal|module|nanosvg|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
@@ -661,8 +700,8 @@ NVML,ThirdParty,General,ThirdParty\NVIDIA\NVML\NVML.build.cs,unreal|module|nvml|
 nvTessLib,ThirdParty,General,ThirdParty\nvtesslib\nvTessLib.Build.cs,unreal|module|tess|lib|third|party|nvtesslib,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 nvTextureTools,ThirdParty,General,ThirdParty\nvTextureTools\nvTextureTools.Build.cs,unreal|module|texture|tools|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 nvTriStrip,ThirdParty,General,ThirdParty\nvTriStrip\nvTriStrip.Build.cs,unreal|module|tri|strip|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
-OculusOpenXRLoader,ThirdParty,XR,ThirdParty\Oculus\OculusOpenXRLoader\OculusOpenXRLoader.build.cs,xr|vr|ar|oculus|open|xrloader|third|party,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
 oneAPILevelZero,ThirdParty,General,ThirdParty\Intel\oneAPILevelZero\oneAPILevelZero.Build.cs,unreal|module|one|apilevel|zero|third|party|intel,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
+OpenBLAS,ThirdParty,General,ThirdParty\OpenBLAS\OpenBLAS.Build.cs,unreal|module|open|blas|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 OpenColorIOLib,ThirdParty,General,ThirdParty\OpenColorIO\OpenColorIOLib.Build.cs,unreal|module|open|color|iolib|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 OpenGL,ThirdParty,Rendering,ThirdParty\OpenGL\OpenGL.Build.cs,render|shader|rhi|open|third|party,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 OpenSSL,ThirdParty,NetworkingOnline,ThirdParty\OpenSSL\OpenSSL.Build.cs,network|online|replication|open|ssl|third|party,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
@@ -696,6 +735,7 @@ UElibJPG,ThirdParty,General,ThirdParty\libJPG\UElibJPG.Build.cs,unreal|module|jp
 UElibPNG,ThirdParty,General,ThirdParty\libPNG\UElibPNG.Build.cs,unreal|module|png|uelib|third|party|lib,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 UElibSampleRate,ThirdParty,General,ThirdParty\libSampleRate\UElibSampleRate.Build.cs,unreal|module|sample|rate|uelib|third|party|lib,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 UEOgg,ThirdParty,Audio,ThirdParty\Ogg\UEOgg.Build.cs,audio|sound|metasound|ueogg|third|party|ogg,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
+UEOpenAPV,ThirdParty,General,ThirdParty\OpenAPV\UEOpenAPV.Build.cs,unreal|module|apv|ueopen|third|party|open,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 UEOpenExr,ThirdParty,AssetsBuildPipeline,ThirdParty\openexr\UEOpenExr.Build.cs,asset|cook|package|ueopen|exr|third|party|openexr,ue5-performance-packaging,ue5-architecture,medium,domain_mapping
 VHACD,ThirdParty,General,ThirdParty\VHACD\VHACD.Build.cs,unreal|module|vhacd|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 VisualStudioDTE,ThirdParty,General,ThirdParty\Windows\VisualStudioDTE\VisualStudioDTE.Build.cs,unreal|module|visual|studio|dte|third|party|windows,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
@@ -709,6 +749,8 @@ WinHttp,ThirdParty,NetworkingOnline,ThirdParty\WinHttp\WinHttp.Build.cs,network|
 WinPixEventRuntime,ThirdParty,General,ThirdParty\Windows\PIX\WinPixEventRuntime.Build.cs,unreal|module|pix|win|event|third|party|windows,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 Wintab,ThirdParty,General,ThirdParty\Wintab\Wintab.Build.cs,unreal|module|wintab|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 XAudio2_9,ThirdParty,Audio,ThirdParty\Windows\XAudio2_9\XAudio2_9.Build.cs,audio|sound|metasound|xaudio2|third|party|windows,ue5-cpp-gameplay,ue5-architecture,medium,domain_mapping
+XCurl,ThirdParty,NetworkingOnline,ThirdParty\Microsoft\XCurl\XCurl.build.cs,network|online|replication|xcurl|third|party|microsoft,ue5-save-load-replication,ue5-cpp-gameplay,medium,domain_mapping
 XInput,ThirdParty,General,ThirdParty\Windows\XInput\XInput.Build.cs,unreal|module|xinput|third|party|windows,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
+XSAPI,ThirdParty,General,ThirdParty\Microsoft\XSAPI\XSAPI.build.cs,unreal|module|xsapi|third|party|microsoft,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 xxhash,ThirdParty,General,ThirdParty\xxhash\xxhash.Build.cs,unreal|module|xxhash|third|party,ue5-architecture,ue5-cpp-gameplay,low,domain_mapping
 zlib,ThirdParty,AssetsBuildPipeline,ThirdParty\zlib\zlib.Build.cs,asset|cook|package|zlib|third|party,ue5-performance-packaging,ue5-architecture,medium,domain_mapping

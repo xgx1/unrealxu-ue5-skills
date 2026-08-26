@@ -1,6 +1,6 @@
 ---
 name: ue5-performance-packaging
-description: UE5.6/UE5.7 performance and packaging readiness workflow. Use when requests involve PIE performance checks, runtime stat review, pre-package validation, build configuration sanity, and release readiness checklists.
+description: UE5.6-UE5.8 performance and packaging readiness workflow. Use when requests involve PIE performance checks, runtime stat review, pre-package validation, build configuration sanity, and release readiness checklists.
 ---
 
 # Quick Start
@@ -8,7 +8,7 @@ description: UE5.6/UE5.7 performance and packaging readiness workflow. Use when 
 - Collect current performance symptoms and packaging goal.
 - Output a pre-package checklist plus measurement plan.
 
-# UE5.7 API Anchors
+# API Anchors (UE5.6-UE5.8)
 - Runtime quality and frame-budget anchors:
   - `UGameUserSettings::SetOverallScalabilityLevel(...)`
   - `UGameUserSettings::SetFrameRateLimit(...)`
@@ -99,11 +99,14 @@ description: UE5.6/UE5.7 performance and packaging readiness workflow. Use when 
 - Prefer explicit map/cook lists over implicit discovery for release builds.
 - Use AssetRegistry queries to validate dependencies before packaging.
 - Keep one source of truth for release packaging settings per target profile.
+- In UE5.8, treat Zenserver cooked output as an iteration store; keep Pak/IoStore staging validation for distributable builds.
+- Treat UE5.8 Incremental Cooking as a beta iteration path and retain a clean/full-cook release check.
 - Re-run readiness checks after any packaging setting change.
 
-# UE5.6 / UE5.7 Compatibility Notes
-- `UGameUserSettings`, `UProjectPackagingSettings`, and AssetRegistry APIs above are stable in UE5.6/UE5.7.
-- `ProjectPackagingSettings.h` lives under `Developer/DeveloperToolSettings` in both versions.
+# UE5.6-UE5.8 Compatibility Notes
+- `UGameUserSettings`, `UProjectPackagingSettings`, and AssetRegistry APIs above are stable in UE5.6-UE5.8.
+- `ProjectPackagingSettings.h` lives under `Developer/DeveloperToolSettings` across UE5.6-UE5.8.
+- UE5.8 enables Zenserver as the cooked output store by default for supported iteration workflows; this does not replace release container validation.
 
 # Escalation
 - Escalate when performance bottleneck requires engine-level profiling or renderer changes.

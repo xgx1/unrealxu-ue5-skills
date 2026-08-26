@@ -1,4 +1,4 @@
-# Prepackage Checklist (UE5.6/UE5.7)
+# Prepackage Checklist (UE5.6-UE5.8)
 
 ## Project Settings
 - Default map and game mode are correct.
